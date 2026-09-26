@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Vintage Motorworks — კლასიკური და ვინტაჟური ავტომობილების პრემიუმ რესტავრაცია, ტექნიკური მოვლა და შერჩევა კოლექციონერთათვის.">
+  <title>Vintage Motorworks | კლასიკური ავტომობილების რესტავრაცია</title>
+
+  <!-- Google Fonts: Oswald (Headings & Labels) & Lora (Body & Narrative) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- წვდომადობის ბმული ეკრანის წამკითხველებისთვის -->
+  <a href="#main-content" class="skip-link">გადასვლა ძირითად შინაარსზე</a>
+
+  <!-- 1. HEADER (წებოვანი, მუქი მწვანე, ჟანგისფერი ქვედა ხაზი) -->
+  <header id="site-header" class="site-header">
+    <div class="header-container">
+      <a href="#" class="brand-logo" aria-label="Vintage Motorworks მთავარი გვერდი">
+        <span class="logo-vintage">Vintage</span>
+        <span class="logo-motorworks">Motorworks</span>
+      </a>
+
+      <!-- მობილური მენიუს ღილაკი -->
+      <button 
+        type="button" 
+        class="nav-toggle" 
+        id="nav-toggle" 
+        aria-expanded="false" 
+        aria-controls="primary-nav" 
+        aria-label="მენიუს გახსნა">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+
+      <!-- მთავარი ნავიგაცია -->
+      <nav id="primary-nav" class="primary-nav" aria-label="მთავარი ნავიგაცია">
+        <ul class="nav-list">
+          <li><a href="#about" class="nav-link">ჩვენს შესახებ</a></li>
+          <li><a href="#services" class="nav-link">სერვისები</a></li>
+          <li><a href="#contact" class="nav-link">კონტაქტი</a></li>
+        </ul>
+        <a href="#contact" class="btn btn-header">კონსულტაცია</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- 2. HERO სექცია (ორსვეტიანი grid, სტატისტიკა, მანქანის SVG ილუსტრაცია) -->
+    <section class="hero-section" id="hero" aria-labelledby="hero-title">
+      <div class="hero-container">
+        <!-- მარცხენა სვეტი: სათაური, ტექსტი, ღილაკები, სტატისტიკა -->
+        <div class="hero-content">
+          <p class="kicker">დაარსდა 1978 წელს · ხელით, დეტალებით</p>
+          <h1 id="hero-title" class="hero-title">
+            კლასიკური ავტომობილების რესტავრაციის უმაღლესი ოსტატობა
+          </h1>
+          <p class="hero-lede">
+            ჩვენ ვაბრუნებთ ლეგენდარული მანქანების პირვანდელ სულსა და მექანიკურ სრულყოფილებას. ავთენტური ნაწილები, საარქივო სიზუსტე და ათწლეულების გამოცდილება კოლექციონერთათვის.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">დაგვიკავშირდით</a>
+            <a href="#services" class="btn-text">
+              <span>ნახეთ სერვისები</span>
+              <span class="arrow-icon" aria-hidden="true">→</span>
+            </a>
+          </div>
+
+          <!-- სტატისტიკის მწკრივი (3 რიცხვი + წარწერა, გამოყოფილი ზედა ხაზით) -->
+          <div class="hero-stats" role="region" aria-label="სახელოსნოს მიღწევების სტატისტიკა">
+            <div class="stat-item">
+              <span class="stat-number">46+</span>
+              <span class="stat-label">წლის გამოცდილება</span>
+            </div>
+            <div class="stat-divider" aria-hidden="true"></div>
+            <div class="stat-item">
+              <span class="stat-number">320+</span>
+              <span class="stat-label">აღდგენილი ავტომობილი</span>
+            </div>
+            <div class="stat-divider" aria-hidden="true"></div>
+            <div class="stat-item">
+              <span class="stat-number">14</span>
+              <span class="stat-label">ოსტატი ხელოსანი</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- მარჯვენა სვეტი: ავტომობილის გვერდითი სილუეტი (ინლაინ SVG) -->
+        <div class="hero-visual" aria-hidden="true">
+          <div class="blueprint-frame">
+            <div class="technical-mark top-left">+ 01</div>
+            <div class="technical-mark top-right">REF: 1978-GT</div>
+            <svg 
+              class="car-svg" 
+              viewBox="0 0 760 320" 
+              fill="none" 
+              xmlns="http://www.w3.org/2000/svg"
+              role="img"
+              aria-label="ვინტაჟური სპორტული ავტომობილის ტექნიკური სილუეტი">
+              <!-- საინჟინრო საკოორდინაციო ბადე -->
+              <g class="blueprint-grid" stroke="var(--chrome)" stroke-opacity="0.18" stroke-dasharray="3 4">
+                <line x1="20" y1="260" x2="740" y2="260" />
+                <line x1="20" y1="180" x2="740" y2="180" />
+                <line x1="20" y1="100" x2="740" y2="100" />
+                <line x1="160" y1="40" x2="160" y2="290" />
+                <line x1="580" y1="40" x2="580" y2="290" />
+              </g>
+
+              <!-- გზის საბაზისო ხაზი -->
+              <line x1="30" y1="265" x2="730" y2="265" stroke="var(--chrome)" stroke-width="1.5" stroke-opacity="0.4" />
+
+              <!-- მანქანის ძარის მთავარი სილუეტი (გრძელი კაპოტი, კუპეს ჭერი, უკანა კუდი) -->
+              <path 
+                d="M 52 245 
+                   L 70 235 
+                   C 85 233, 98 220, 105 200 
+                   C 112 182, 120 178, 170 178 
+                   L 300 176 
+                   C 360 176, 400 120, 445 110 
+                   C 485 102, 545 104, 575 115 
+                   C 605 125, 625 155, 645 185 
+                   L 680 198 
+                   C 705 208, 715 224, 715 240 
+                   L 712 250 
+                   L 670 250 
+                   C 666 215, 638 190, 595 190 
+                   C 552 190, 524 215, 520 250 
+                   L 240 250 
+                   C 236 215, 208 190, 165 190 
+                   C 122 190, 94 215, 90 250 
+                   Z" 
+                stroke="var(--chrome)" 
+                stroke-width="2.5" 
+                stroke-linejoin="round"
+                class="car-body-outline" />
+
+              <!-- სახურავის და მინის (Windshield & Side Window) კონტური -->
+              <path 
+                d="M 440 172 
+                   L 465 122 
+                   C 480 116, 535 116, 560 125 
+                   C 580 133, 598 152, 610 172 
+                   Z" 
+                stroke="var(--rust)" 
+                stroke-width="2" 
+                stroke-linejoin="round"
+                class="car-window-line" />
+
+              <!-- მინის გამყოფი რკალი (B-pillar) -->
+              <line x1="535" y1="118" x2="540" y2="172" stroke="var(--chrome)" stroke-width="1.5" />
+
+              <!-- გვერდითი ქრომირებული დეკორატიული ხაზი (Coachline) -->
+              <path 
+                d="M 125 198 L 360 198 C 420 198, 480 196, 675 210" 
+                stroke="var(--rust)" 
+                stroke-width="1.5" 
+                stroke-dasharray="8 3" 
+                class="car-coachline" />
+
+              <!-- კარის ხაზი და სახელური -->
+              <path d="M 432 172 L 418 248" stroke="var(--chrome)" stroke-width="1.5" stroke-opacity="0.8" />
+              <path d="M 590 174 L 565 248" stroke="var(--chrome)" stroke-width="1.5" stroke-opacity="0.8" />
+              <rect x="445" y="190" width="22" height="4" fill="var(--chrome)" />
+
+              <!-- წინა და უკანა ბამპერები (ლითონის მკვეთრი ხაზი) -->
+              <path d="M 40 240 L 65 240 L 60 255" stroke="var(--chrome)" stroke-width="2.5" />
+              <path d="M 705 248 L 725 248 L 722 232" stroke="var(--chrome)" stroke-width="2.5" />
+
+              <!-- მაშუქი (Headlight) და უკანა გაბარიტი -->
+              <path d="M 70 205 C 75 200, 85 200, 85 215 C 85 225, 75 228, 68 222 Z" stroke="var(--rust)" stroke-width="1.5" fill="none" />
+              <rect x="710" y="218" width="5" height="15" fill="var(--rust)" />
+
+              <!-- წინა ბორბალი (ორი წრეხაზი + სპიკები + ჟანგისფერი ცენტრი) -->
+              <g class="wheel front-wheel">
+                <!-- გარე საბურავი -->
+                <circle cx="165" cy="248" r="48" stroke="var(--chrome)" stroke-width="3" />
+                <!-- შიდა დისკი -->
+                <circle cx="165" cy="248" r="32" stroke="var(--chrome)" stroke-width="2" />
+                <circle cx="165" cy="248" r="28" stroke="var(--rust)" stroke-width="1" stroke-dasharray="4 4" />
+                <!-- ცენტრალური კვანძი (Hub) -->
+                <circle cx="165" cy="248" r="9" fill="var(--rust)" stroke="var(--chrome)" stroke-width="1.5" />
+                <!-- სპიკები (Wire Spokes) -->
+                <line x1="165" y1="216" x2="165" y2="280" stroke="var(--chrome)" stroke-width="1" stroke-opacity="0.6" />
+                <line x1="133" y1="248" x2="197" y2="248" stroke="var(--chrome)" stroke-width="1" stroke-opacity="0.6" />
+                <line x1="142" y1="225" x2="188" y2="271" stroke="var(--chrome)" stroke-width="1" stroke-opacity="0.6" />
+                <line x1="142" y1="271" x2="188" y2="225" stroke="var(--chrome)" stroke-width="1" stroke-opacity="0.6" />
+              </g>
+
+              <!-- უკანა ბორბალი (ორი წრეხაზი + სპიკები + ჟანგისფერი ცენტრი) -->
+              <g class="wheel rear-wheel">
+                <circle cx="595" cy="248" r="48" stroke="var(--chrome)" stroke-width="3" />
+                <circle cx="595" cy="248" r="32" stroke="var(--chrome)" stroke-width="2" />
+                <circle cx="595" cy="248" r="28" stroke="var(--rust)" stroke-width="1" stroke-dasharray="4 4" />
+                <circle cx="595" cy="248" r="9" fill="var(--rust)" stroke="var(--chrome)" stroke-width="1.5" />
+                <!-- სპიკები -->
+                <line x1="595" y1="216" x2="595" y2="280" stroke="var(--chrome)" stroke-width="1" stroke-opacity="0.6" />
+                <line x1="563" y1="248" x2="627" y2="248" stroke="var(--chrome)" stroke-width="1" stroke-opacity="0.6" />
+                <line x1="572" y1="225" x2="618" y2="271" stroke="var(--chrome)" stroke-width="1" stroke-opacity="0.6" />
+                <line x1="572" y1="271" x2="618" y2="225" stroke="var(--chrome)" stroke-width="1" stroke-opacity="0.6" />
+              </g>
+            </svg>
+            <div class="technical-mark bottom-left">CHASSIS SPEC: STEEL TUBULAR</div>
+            <div class="technical-mark bottom-right">SCALE 1:20</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. ABOUT სექცია (ორსვეტიანი: ვიწრო ნომრის ნიშანი + ფართო ტექსტი/უპირატესობები) -->
+    <section class="about-section" id="about" aria-labelledby="about-title">
+      <div class="about-container">
+        <!-- ვიწრო სვეტი: დეკორატიული "ნომრის ნიშნის" სტილის ბლოკი -->
+        <div class="about-license-col">
+          <div class="vintage-plate" aria-label="ისტორიული სარეგისტრაციო დაფა: დაარსდა 1978 წელს">
+            <!-- ოთხი კუთხის ლითონის სამაგრი ჭანჭიკი -->
+            <span class="plate-bolt plate-bolt-tl" aria-hidden="true"></span>
+            <span class="plate-bolt plate-bolt-tr" aria-hidden="true"></span>
+            <span class="plate-bolt plate-bolt-bl" aria-hidden="true"></span>
+            <span class="plate-bolt plate-bolt-br" aria-hidden="true"></span>
+
+            <div class="plate-inner">
+              <span class="plate-sub">GEORGIA · WORKSHOP</span>
+              <div class="plate-main">
+                <span class="plate-prefix">EST.</span>
+                <span class="plate-year">1978</span>
+              </div>
+              <span class="plate-tag">CLASSIC RESTORATION · NO. 078</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ფართო სვეტი: სათაური, 2 აბზაცი, 3 უპირატესობა custom bullet-ებით -->
+        <div class="about-content-col">
+          <h2 id="about-title" class="section-title">
+            ავტომობილის ისტორიის გაცოცხლება კომპრომისების გარეშე
+          </h2>
+          <p class="about-text">
+            Vintage Motorworks უკვე ოთხ ათწლეულზე მეტია ერთგულად ემსახურება საავტომობილო მემკვიდრეობის შენარჩუნებას. ჩვენთვის თითოეული კლასიკური მანქანა უნიკალური საინჟინრო ხელოვნების ნიმუშია, რომელსაც განსაკუთრებული პატივისცემა, ღრმა ცოდნა და საარქივო სიზუსტე სჭირდება.
+          </p>
+          <p class="about-text">
+            ჩვენი მიდგომა აერთიანებს ტრადიციულ ხელოსნურ მეთოდებს — ლითონის ხელით დამუშავებას ინგლისურ ბორბალზე (English Wheel), ძრავის კვანძების ზუსტ რეკალიბრაციასა და ავთენტური მასალების შერჩევას — თანამედროვე ტექნოლოგიურ ხარისხის კონტროლთან.
+          </p>
+
+          <!-- 3 უპირატესობის სია custom bullet-ებით -->
+          <ul class="advantages-list">
+            <li class="advantage-item">
+              <span class="advantage-bullet" aria-hidden="true"></span>
+              <div class="advantage-body">
+                <strong class="advantage-title">100% ავთენტურობა და საარქივო შესაბამისობა</strong>
+                <p class="advantage-desc">
+                  ყველა დეტალი, ქარხნული საღებავის ფორმულიდან დაწყებული ელექტროგაყვანილობის იზოლაციით დამთავრებული, მკაცრად შეესაბამება გამოშვების წლის ორიგინალ სპეციფიკაციებს.
+                </p>
+              </div>
+            </li>
+            <li class="advantage-item">
+              <span class="advantage-bullet" aria-hidden="true"></span>
+              <div class="advantage-body">
+                <strong class="advantage-title">საკუთარი ლითონდამუშავებისა და ძრავის ლაბორატორია</strong>
+                <p class="advantage-desc">
+                  დამოუკიდებელი ტექნიკური ბაზა უიშვიათესი დეტალების ხელით დასამზადებლად, რთული აგრეგატების სრული რეკონსტრუქციისა და დინამომეტრზე ტესტირებისთვის.
+                </p>
+              </div>
+            </li>
+            <li class="advantage-item">
+              <span class="advantage-bullet" aria-hidden="true"></span>
+              <div class="advantage-body">
+                <strong class="advantage-title">გამჭვირვალე საარქივო დოკუმენტაცია</strong>
+                <p class="advantage-desc">
+                  რესტავრაციის ყოველი ეტაპის მაღალი გარჩევადობის ფოტო-ვიდეო ფიქსაცია და დეტალური საისტორიო პასპორტი კოლექციის საბაზრო ღირებულების ოფიციალურად დასადასტურებლად.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. FEATURES სექცია (3 ბარათი, hairline ბორდერები, circular gauge ხატულა) -->
+    <section class="features-section" id="services" aria-labelledby="services-title">
+      <div class="features-container">
+        <!-- სექციის თავსართი (h2 + მოკლე აღწერა) -->
+        <header class="section-header">
+          <h2 id="services-title" class="section-title section-title-center">სპეციალიზებული სერვისები</h2>
+          <p class="section-desc">
+            სრული ციკლის საექსპერტო მომსახურება საკოლექციო და კლასიკური ავტომობილებისთვის
+          </p>
+        </header>
+
+        <!-- 3 ბარათის grid (desktop: 3, tablet: 2, mobile: 1) -->
+        <div class="features-grid">
+          <!-- ბარათი 1: სრული რესტავრაცია -->
+          <article class="feature-card">
+            <div class="card-header">
+              <!-- SVG "გამზომი ხელსაწყოს" (circular gauge with needle) ხატულა -->
+              <div class="gauge-icon-wrapper" aria-hidden="true">
+                <svg class="gauge-svg" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <!-- გარე ქრომის ჩარჩო -->
+                  <circle cx="24" cy="24" r="22" stroke="var(--chrome)" stroke-width="2" />
+                  <circle cx="24" cy="24" r="18" stroke="var(--chrome)" stroke-width="1" stroke-dasharray="2 3" stroke-opacity="0.8" />
+                  <!-- ციფერბლატის დანაყოფები -->
+                  <line x1="24" y1="8" x2="24" y2="12" stroke="var(--chrome)" stroke-width="1.5" />
+                  <line x1="12" y1="15" x2="15" y2="18" stroke="var(--chrome)" stroke-width="1.5" />
+                  <line x1="36" y1="15" x2="33" y2="18" stroke="var(--chrome)" stroke-width="1.5" />
+                  <line x1="8" y1="24" x2="12" y2="24" stroke="var(--chrome)" stroke-width="1.5" />
+                  <line x1="40" y1="24" x2="36" y2="24" stroke="var(--rust)" stroke-width="2" />
+                  <!-- ისარი (Needle) ჟანგისფერში -->
+                  <line x1="24" y1="24" x2="35" y2="15" stroke="var(--rust)" stroke-width="2" stroke-linecap="square" />
+                  <!-- ცენტრალური ღერძი -->
+                  <circle cx="24" cy="24" r="3.5" fill="var(--ink)" stroke="var(--chrome)" stroke-width="1.5" />
+                </svg>
+              </div>
+              <h3 class="card-title">სრული რესტავრაცია</h3>
+            </div>
+            <p class="card-text">
+              ჩარჩოს სრული დაშლა და აღდგენა (nut-and-bolt restoration), ძარისა და შასის ზუსტი გეომეტრია, ავთენტური ნიტრო-საღებავით შეღებვა და სალონის ხელით გადაკერვა ორიგინალი ტყავითა და ხით.
+            </p>
+          </article>
+
+          <!-- ბარათი 2: ტექნიკური მოვლა -->
+          <article class="feature-card">
+            <div class="card-header">
+              <div class="gauge-icon-wrapper" aria-hidden="true">
+                <svg class="gauge-svg" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <!-- გარე ქრომის ჩარჩო -->
+                  <circle cx="24" cy="24" r="22" stroke="var(--chrome)" stroke-width="2" />
+                  <circle cx="24" cy="24" r="18" stroke="var(--chrome)" stroke-width="1" stroke-dasharray="2 3" stroke-opacity="0.8" />
+                  <!-- ციფერბლატის დანაყოფები -->
+                  <line x1="24" y1="8" x2="24" y2="12" stroke="var(--chrome)" stroke-width="1.5" />
+                  <line x1="12" y1="15" x2="15" y2="18" stroke="var(--chrome)" stroke-width="1.5" />
+                  <line x1="36" y1="15" x2="33" y2="18" stroke="var(--chrome)" stroke-width="1.5" />
+                  <line x1="8" y1="24" x2="12" y2="24" stroke="var(--chrome)" stroke-width="1.5" />
+                  <line x1="40" y1="24" x2="36" y2="24" stroke="var(--chrome)" stroke-width="1.5" />
+                  <!-- ისარი (Needle) სხვა კუთხით, ჟანგისფერში -->
+                  <line x1="24" y1="24" x2="18" y2="13" stroke="var(--rust)" stroke-width="2" stroke-linecap="square" />
+                  <!-- ცენტრალური ღერძი -->
+                  <circle cx="24" cy="24" r="3.5" fill="var(--ink)" stroke="var(--chrome)" stroke-width="1.5" />
+                </svg>
+              </div>
+              <h3 class="card-title">ტექნიკური მოვლა</h3>
+            </div>
+            <p class="card-text">
+              კარბურატორების ზუსტი სინქრონიზაცია, რთული მექანიკური კოლოფებისა და საკიდრის სისტემების პერიოდული სერვისი, სეზონური კონსერვაცია და მუდმივი მზადყოფნა რეტრო-რალისთვის.
+            </p>
+          </article>
+
+          <!-- ბარათი 3: მოძებნა და შეძენა -->
+          <article class="feature-card">
+            <div class="card-header">
+              <div class="gauge-icon-wrapper" aria-hidden="true">
+                <svg class="gauge-svg" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <!-- გარე ქრომის ჩარჩო -->
+                  <circle cx="24" cy="24" r="22" stroke="var(--chrome)" stroke-width="2" />
+                  <circle cx="24" cy="24" r="18" stroke="var(--chrome)" stroke-width="1" stroke-dasharray="2 3" stroke-opacity="0.8" />
+                  <!-- ციფერბლატის დანაყოფები -->
+                  <line x1="24" y1="8" x2="24" y2="12" stroke="var(--chrome)" stroke-width="1.5" />
+                  <line x1="12" y1="15" x2="15" y2="18" stroke="var(--chrome)" stroke-width="1.5" />
+                  <line x1="36" y1="15" x2="33" y2="18" stroke="var(--chrome)" stroke-width="1.5" />
+                  <line x1="8" y1="24" x2="12" y2="24" stroke="var(--chrome)" stroke-width="1.5" />
+                  <line x1="40" y1="24" x2="36" y2="24" stroke="var(--chrome)" stroke-width="1.5" />
+                  <!-- ისარი (Needle) ვერტიკალურად, ჟანგისფერში -->
+                  <line x1="24" y1="24" x2="24" y2="10" stroke="var(--rust)" stroke-width="2" stroke-linecap="square" />
+                  <!-- ცენტრალური ღერძი -->
+                  <circle cx="24" cy="24" r="3.5" fill="var(--ink)" stroke="var(--chrome)" stroke-width="1.5" />
+                </svg>
+              </div>
+              <h3 class="card-title">მოძებნა და შეძენა</h3>
+            </div>
+            <p class="card-text">
+              იშვიათი ისტორიული ეგზემპლარების საერთაშორისო ძიება, ნომრების (Matching Numbers) და დოკუმენტაციის აუდიტი, აუქციონებზე წარმომადგენლობა და უსაფრთხო ლოჯისტიკა.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. CONTACT სექცია (ორსვეტიანი: მარცხნივ address ბლოკი, მარჯვნივ მუქი მწვანე ფორმა) -->
+    <section class="contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="contact-container">
+        <!-- მარცხენა სვეტი: საკონტაქტო ინფორმაცია -->
+        <div class="contact-info">
+          <h2 id="contact-title" class="section-title">დაგეგმეთ თქვენი პროექტი</h2>
+          <p class="contact-lead">
+            გაქვთ უნიკალური პროექტი, გსურთ არსებული კოლექციის სრულყოფილი მოვლა ან ეძებთ კონკრეტულ მოდელს? გაიარეთ პირველადი კონსულტაცია ჩვენს წამყვან რესტავრატორებთან.
+          </p>
+
+          <address class="contact-address">
+            <div class="address-item">
+              <span class="address-label">სახელოსნოს მისამართი:</span>
+              <p class="address-val">საარქივო & სარესტავრაციო ცენტრი, ვაჟა-ფშაველას გამზ. 45, თბილისი, 0177</p>
+            </div>
+
+            <div class="address-item">
+              <span class="address-label">საკონტაქტო ტელეფონი:</span>
+              <p class="address-val">
+                <a href="tel:+995322001978" class="contact-link">+995 (32) 200 1978</a>
+              </p>
+            </div>
+
+            <div class="address-item">
+              <span class="address-label">ელექტრონული ფოსტა:</span>
+              <p class="address-val">
+                <a href="mailto:info@vintagemotorworks.ge" class="contact-link">info@vintagemotorworks.ge</a>
+              </p>
+            </div>
+
+            <div class="address-item">
+              <span class="address-label">სამუშაო გრაფიკი:</span>
+              <p class="address-val">ორშაბათი – პარასკევი: 09:00 – 18:00 (ვიზიტი მხოლოდ წინასწარი ჩაწერით)</p>
+            </div>
+          </address>
+        </div>
+
+        <!-- მარჯვენა სვეტი: მუქი მწვანე ფორმა ვალიდაციით -->
+        <div class="contact-form-card">
+          <form id="contact-form" class="contact-form" novalidate>
+            <div class="form-group">
+              <label for="client-name" class="form-label">სახელი და გვარი <span class="required" aria-hidden="true">*</span></label>
+              <input 
+                type="text" 
+                id="client-name" 
+                name="name" 
+                class="form-input" 
+                placeholder="მაგ. ალექსანდრე ჩხეიძე" 
+                required 
+                autocomplete="name">
+              <span class="field-error" id="name-error" aria-live="polite"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="client-email" class="form-label">ელფოსტა <span class="required" aria-hidden="true">*</span></label>
+              <input 
+                type="email" 
+                id="client-email" 
+                name="email" 
+                class="form-input" 
+                placeholder="alex@example.com" 
+                required 
+                autocomplete="email">
+              <span class="field-error" id="email-error" aria-live="polite"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="client-message" class="form-label">პროექტის აღწერა <span class="required" aria-hidden="true">*</span></label>
+              <textarea 
+                id="client-message" 
+                name="message" 
+                class="form-textarea" 
+                rows="4" 
+                placeholder="მიუთითეთ ავტომობილის მარკა, მოდელი, გამოშვების წელი და საჭირო სამუშაოების მოკლე აღწერა..." 
+                required></textarea>
+              <span class="field-error" id="message-error" aria-live="polite"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-submit" id="submit-btn">
+              <span>მოთხოვნის გაგზავნა</span>
+            </button>
+
+            <!-- სტატუსის ტექსტი (aria-live="polite" წარმატების ან შეცდომის შეტყობინებისთვის) -->
+            <div id="form-status" class="form-status" aria-live="polite" role="status"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER (მუქი ფონი, flex space-between: copyright + წელი + სლოგანი) -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-copy">
+        <p>© <span id="current-year">2026</span> Vintage Motorworks. ყველა უფლება დაცულია.</p>
+      </div>
+      <div class="footer-slogan">
+        <p>ავთენტურობა ყოველ დეტალში. შექმნილია მუდმივობისთვის.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
